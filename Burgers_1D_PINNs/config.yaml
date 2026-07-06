@@ -1,0 +1,20 @@
+domain:
+  h: 0.1
+  k: 0.1
+  x_min: -1.0
+  x_max: 1.0
+  t_min: 0.0
+  t_max: 1.0
+  nu: 0.00318309886  # pi divided by 0.01
+
+network:
+  layers: [2, 20, 30, 30, 20, 20, 1]
+
+training:
+  adam_epochs: 1000
+  adam_lr: 0.001
+  lbfgs_lr: 1.0
+  lbfgs_max_iter: 4000
+  history_size: 50
+  tolerance_grad: 1e-07
+  print_every: 100
