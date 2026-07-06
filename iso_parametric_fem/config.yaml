@@ -1,0 +1,12 @@
+geometry:
+  inner_radius: 1.0
+  outer_radius: 2.0
+  num_r: 5
+  num_theta: 11
+
+solver:
+  quadrature_order: 3  # Order of Gauss-Legendre integration
+
+output:
+  mesh_plot_path: "fem_mesh.png"
+  solution_plot_path: "fem_solution.png"
