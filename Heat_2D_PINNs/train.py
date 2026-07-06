@@ -24,11 +24,6 @@ def main():
     iterations = config['training']['iterations']
     print_every = config['training']['print_every']
 
-    try:
-        model.load_state_dict(torch.load("heat_2d_pinn.pt"))
-        print("Previous weights loaded successfully! Continuing training...")
-    except FileNotFoundError:
-        print("No previous weights found. Starting training from scratch.")
     
     print("Starting 2D Heat Equation PINN Training...")
     
