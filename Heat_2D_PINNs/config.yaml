@@ -1,0 +1,16 @@
+# Network Architecture
+network:
+  input_dim: 3       # (x, y, t)
+  hidden_dim: 64
+  output_dim: 1      # u(x, y, t)
+
+# Training Hyperparameters
+training:
+  iterations: 2000
+  learning_rate: 0.001
+  number_points: 2000
+  print_every: 100
+
+# Boundary / Physical parameters
+physics:
+  custom_boundary_value: 0.0
